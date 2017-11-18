@@ -1,0 +1,45 @@
+\documentclass[aspectratio=169]{$documentclass$}
+
+\usepackage{etex}
+\usepackage{amssymb,amsmath}
+\usepackage{fixltx2e} % provides \textsubscript
+\usepackage{tikz}
+\usepackage{tikz-qtree}
+\usepackage{fontspec,xltxtra,xunicode}
+\usepackage{mathtools}
+\usepackage{unicode-math}
+\usepackage{tikz-cd}
+
+\defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+\usefonttheme{professionalfonts}
+\setromanfont{Times}
+\setmainfont{Helvetica}
+\setsansfont{Helvetica}
+\setmonofont{Courier}
+\setbeamerfont{frametitle}{family=\fontspec{Arial}}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+
+\def\tightlist{}
+
+$highlighting-macros$
+
+$for(header-includes)$
+$header-includes$
+$endfor$
+
+\begin{document}
+
+$for(include-before)$
+$include-before$
+$endfor$
+
+$body$
+
+$for(include-after)$
+$include-after$
+$endfor$
+
+\end{document}
